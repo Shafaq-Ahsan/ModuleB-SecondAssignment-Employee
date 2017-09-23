@@ -1,0 +1,87 @@
+<html>
+    <head>
+<!--<script language="JavaScript" src="https://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>-->
+<!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+<!--<script language="JavaScript" src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js" type="text/javascript"></script>-->
+<!--<script language="JavaScript" src="https://cdn.datatables.net/plug-ins/3cfcc339e89/integration/bootstrap/3/dataTables.bootstrap.js" type="text/javascript"></script>-->
+<!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+<!--<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
+<!--<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/plug-ins/3cfcc339e89/integration/bootstrap/3/dataTables.bootstrap.css">-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/script.js"></script>
+<title>Assignment 3</title>
+    </head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h2 class="text-left">Bonus Calculation</h2>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12">
+<button class="btn btn-primary" style="margin-bottom:15px"  data-title="Add" data-toggle="modal" data-target="#add" ><span class="glyphicon glyphicon-plus"></span>Add New Percentages</button>
+               
+
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-8 col-md-offset-4"">
+              
+               <div class="form-inline">     
+               <input type="text" class="form-control " id="secondNumber" placeholder="Add Employee Salary" style="width:250px;" />
+               <button class="btn btn-primary" onclick="calculate();" >Calculate Salary</button>
+               </div>
+          
+            </div>
+        </div>
+         <div class="row">
+
+            <div class="col-md-8 col-md-offset-4"">
+                <div class="container" style="margin-top:50px;">
+                    <table class="table table-striped" id="tableBody">
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="add" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" id="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title custom_align" id="Heading">Add New Percentages</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input class="form-control " id="addFirst" type="text" placeholder="Add percentage for salary group [10,000 - 20,000] in numbers">
+                    </div>
+                     <div class="form-group">
+                        <input class="form-control " id="addSecond" type="text" placeholder="Add percentage for salary group [20,001 - 30,000] in numbers">
+                    </div>
+                     <div class="form-group">
+                        <input class="form-control " id="addThird" type="text" placeholder="Add percentage for salary group [30,001 - 40,000] in numbers">
+                    </div>
+                     <div class="form-group">
+                        <input class="form-control " id="addFourth" type="text" placeholder="Add percentage for salary group [40,001 - 50,000] in numbers">
+                    </div>
+                   
+                <div class="modal-footer ">
+                    <button type="button" class="btn btn-warning btn-lg" style="width: 100%;" id="addRecord" onclick="clickAdd();"><span class="glyphicon glyphicon-ok-sign"></span>DONE</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+
+  
+</body>
+</html>
